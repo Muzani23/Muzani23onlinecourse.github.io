@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Shizuru&family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Shizuru&family=Smooch&family=The+Nautigal:wght@700&display=swap');
+body {
+    margin: 10px 40px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+.logo {
+    display: block;
+    margin: 0 0 0 45%;
+}
+.logo h1 {
+    margin: 0;
+    color: rgb(57, 57, 231);
+    font-family:  'The Nautigal', cursive;
+    font-size: 3rem;
+}
+@media screen and (max-width: 700px) {
+    body {
+        margin: 10px 20px;
+        box-sizing: border-box;
+        margin-bottom: 0;
+    }
+    .logo {
+        display: block;
+        justify-content: center;
+    }
+    .logo h1 {
+        margin: 0;
+        color: rgb(57, 57, 231);
+        font-family:  'The Nautigal', cursive;
+        font-size: 1.3rem;
+    }
+}
+.head1 img {
+    width: 70px;
+    height: auto;
+    float: left;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+.head2 {
+    position: relative;
+    float: right;
+    margin: 12px;
+    right: 0px;
+}
+.head2 img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+.head2 img:hover {
+    transform: rotate(120deg);
+}
+.nav1 {
+    position: absolute;
+    right: 20px;
+    display: none;
+    width: 100px;
+}
+.nav1 a {
+    display: block;
+    background-color: lightgrey;
+    text-align: center;
+    padding:10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+.nav1 a:first-of-type {
+    border-top: 3px solid black;
+}
+.nav1 a:hover {
+    background-color: gray;
+    color: white;
+}
+.head2:hover .nav1 {
+    display: block;
+}
+@media screen and (max-width : 700px) {
+    .head1 img {
+        width: 30px;
+        height: auto;
+        float: left;
+        margin: 0;
+        cursor: pointer;
+    }
+    .head2 {
+        position: relative;
+        float: right;
+        margin: 0;
+        right: 0px;
+    }
+    .head2 img {
+        width: 30px;
+        height: auto;
+        cursor: pointer;
+    }
+    .nav1 {
+        position: absolute;
+        right: 0;
+        display: none;
+        width: 80px;
+    }
+}
+.video-materi {
+    display: block;
+    clear: both;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    background-color: gray;
+    margin: 0 auto;
+}
+.video-materi iframe {
+    width: 750px;
+    height: 400px;
+}
+@media screen and (max-width: 700px){
+    .video-materi {
+        margin-top: 70px;
+        padding: 10px;
+    }
+    .video-materi iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+.desc {
+    width: 50%;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.desc h1 {
+    font-size: 1.5rem;
+    font-family:  'Libre Baskerville', serif;;
+}
+.desc p {
+    font-size: 1rem;
+    font-family:  'Libre Baskerville', serif;
+    line-height: 30px;
+}
+.aside {
+    text-align: center;
+    float: right;
+    width: 200px;
+    height: fit-content;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 30px;
+    animation-name: aside;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.aside img {
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    height: auto;
+}
+@media screen and (max-width: 700px) {
+    .desc {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .desc h1 {
+        font-size: 1rem;
+        font-family:  'Libre Baskerville', serif;;
+    }
+    .desc p {
+        font-size: 0.7rem;
+        font-family:  'Libre Baskerville', serif;
+        line-height: 20px;
+    }
+    .aside {
+        display: block;
+        width: 80%;
+        justify-content: center;
+    }
+    .aside h3 {
+        font-size: 1rem;
+    }
+    .aside p {
+        font-size: 0.7rem;
+    }
+    .aside img {
+        width: 80px;
+        height: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+@keyframes aside {
+    0%{
+        transform: scale(1,1);
+    }
+    25%{
+        transform: scale(1.1,1.1);
+    }
+    50%{
+        transform: scale(1,1);
+    }
+    75%{
+        transform: scale(1.1,1.1);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+.materi-selanjutnya {
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 100px;
+}
+.materi-selanjutnya .item {
+    display: block;
+    width: 90%;
+    height: auto;
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 20px;
+    border-radius: 20px;
+    font-family:  'Libre Baskerville', serif;;
+}
+.materi-selanjutnya .item:hover {
+    box-shadow: none;
+}
+@media screen and (max-width: 700px) {
+    .materi-selanjutnya {
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: 0;
+        margin-top: 120px;
+    }
+    .materi-selanjutnya .item {
+        display: block;
+        width: 90%;
+        height: auto;
+        padding: 20px 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-top: 20px;
+        border-radius: 20px;
+        font-family:  'Libre Baskerville', serif;;
+    }
+}
